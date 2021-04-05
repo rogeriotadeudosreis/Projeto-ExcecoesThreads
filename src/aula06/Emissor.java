@@ -1,4 +1,4 @@
-package excecoesThread;
+package aula06;
 
 import java.io.IOException;
 import java.io.ObjectOutputStream;
@@ -13,9 +13,7 @@ public class Emissor {
 		do {
 			System.out.println("Digite a mensagem:");
 			mensagem = input.nextLine();
-			Mensagem mens = new Mensagem();
-			mens.setRemetente("Rogério");
-			mens.setDescricao(mensagem);
+			Mensagem mens = new Mensagem("Rogério", mensagem);
 			try {
 				Socket socket = new Socket("127.0.0.1", 12345);
 				ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());

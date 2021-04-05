@@ -1,4 +1,4 @@
-package excecoesThread;
+package aula06;
 
 import java.io.Serializable;
 
@@ -6,6 +6,11 @@ public class Mensagem implements Serializable {
 
 	private String remetente;
 	private String descricao;
+	
+	public Mensagem (String remetente, String descricao) {
+		this.remetente = remetente;
+		this.descricao = descricao;
+	}
 
 	public String toString() {
 		return String.format("%s: %s", remetente, descricao);

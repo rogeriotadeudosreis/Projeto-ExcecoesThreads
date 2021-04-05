@@ -1,4 +1,4 @@
-package excecoesThread;
+package aula06;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
@@ -18,6 +18,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
 public class EditorTexto extends JFrame implements ActionListener {
+
+	private static final long serialVersionUID = 1L;
 	JButton botaoAbrir = new JButton("Abrir");
 	JButton botaoSalvar = new JButton("Salvar");
 	JTextArea areaTexto = new JTextArea();

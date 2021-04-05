@@ -1,4 +1,4 @@
-package excecoesThread;
+package aula06;
 
 import java.io.ObjectInput;
 import java.io.ObjectInputStream;
@@ -21,7 +21,6 @@ public class Receptor {
 					System.out.println(mens);
 					ois.close();
 					socket.close();
-
 				} finally {
 					server.close();
 				}
